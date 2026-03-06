@@ -2,26 +2,23 @@
 
 ## Cursor Cloud specific instructions
 
-This is a **documentation-only repository** (11 Markdown files, no source code). There are no package manager files, build systems, or application services.
+This is a **documentation-only repository** (Markdown files documenting hardware/software bring-up for an ECE191 autonomous car). There is no application source code.
 
-### Lint
+### Docs framework
 
-```
-markdownlint-cli2 "**/*.md"
-```
+The site uses [MkDocs](https://www.mkdocs.org/) with the [Material](https://squidfunk.github.io/mkdocs-material/) theme. Config is in `mkdocs.yml`. The `docs/` directory contains symlinks to the root-level `.md` files (MkDocs requires a separate docs dir).
 
-Pre-existing lint issues are all `MD013/line-length` warnings plus a couple of `MD029/ol-prefix` in `sensor-fusion.md`. These are in the original content and not regressions.
+### Key commands
 
-### Preview / "Run"
-
-```
-grip README.md 0.0.0.0:6419
-```
-
-Starts a GitHub-flavored Markdown preview server (Flask-based). Navigation between docs works via relative links (e.g. `localhost:6419/camera.md`). `grip` uses the GitHub API to render; if rate-limited, pass `--user` and `--pass` or a token. For offline rendering, `grip` falls back to its local renderer.
+| Task | Command |
+|------|---------|
+| Dev server | `mkdocs serve --dev-addr 0.0.0.0:8000` |
+| Build | `mkdocs build` (output in `site/`) |
+| Lint | `markdownlint-cli2 "**/*.md"` |
 
 ### Notes
 
-- `grip` is installed to `~/.local/bin`; ensure `PATH` includes it (`export PATH="$HOME/.local/bin:$PATH"`).
-- `markdownlint-cli2` is installed globally via npm.
-- There are no automated tests, Docker services, or build steps for this repo.
+- `mkdocs` and `markdownlint-cli2` are installed via the update script (pip / npm global).
+- The `.markdownlint-cli2.jsonc` config excludes `site/` and `docs/` (symlinks) from linting.
+- Pre-existing lint warnings are mostly `MD013/line-length`; these are in the original content.
+- The MkDocs 2.0 compatibility warning from Material is informational only and does not affect the build.

@@ -1,30 +1,5 @@
 # ECE191 1-5th Car Documentation
 
-This repository uses Material for MkDocs. The published documentation content lives in `docs/`, while this root README stays as the GitHub landing page.
-
-- Docs homepage source: [`docs/index.md`](docs/index.md)
-- Planned site URL: <https://davidk003.github.io/ECE191-SP26-1fifth/>
-
-## Docs Development
-
-Install dependencies:
-
-```bash
-python -m pip install -r requirements-docs.txt
-```
-
-Run local preview server:
-
-```bash
-python -m mkdocs serve
-```
-
-Run strict build check:
-
-```bash
-python -m mkdocs build --strict
-```
-
 ## Documentation Directory
 
 - [Jetson](docs/jetson.md) - Flight checks, USB verification, ROS topic checks
@@ -53,9 +28,29 @@ python -m mkdocs build --strict
 - Donkeycar path settings and PID values: `~/projects/mycars/path_follower/myconfig.py`
 - Donkeycar joystick trigger mapping: `~/projects/mycars/path_follower/my_joystick.py`
 
-## Suggested Photos for Final Submission
+## Docs details
 
-- VESC power board and servo wiring path (`servo`, `5v`, `gnd`)
-- Livox connector + Ethernet connection to Jetson
-- GNSS/RC physical wiring chain and USB connections
-- Checkerboard setup during camera-lidar extrinsic calibration
+This repository uses Material for MkDocs. The published documentation content lives in `docs/`, while this root README stays as the GitHub landing page.
+
+- Docs homepage source: [`docs/index.md`](docs/index.md)
+- Planned site URL: <https://davidk003.github.io/ECE191-SP26-1fifth/>
+
+## Docs Development
+
+Install dependencies:
+
+```bash
+python -m pip install -r requirements-docs.txt
+```
+
+Run local preview server:
+
+```bash
+python -m mkdocs serve
+```
+
+Run strict build check:
+
+```bash
+python -m mkdocs build --strict
+```

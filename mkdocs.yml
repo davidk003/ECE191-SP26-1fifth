@@ -7,11 +7,18 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
   features:
     - navigation.sections
     - navigation.top
     - navigation.tracking
     - content.code.copy
+
+extra_css:
+  - stylesheets/ucsd-theme.css
 
 plugins:
   - search

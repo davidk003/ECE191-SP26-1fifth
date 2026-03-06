@@ -1,0 +1,46 @@
+site_name: ECE191 1-5th Car Documentation
+site_description: Bring-up and subsystem guides for the ECE191 1/5 car.
+site_url: https://davidk003.github.io/ECE191-SP26-1fifth/
+repo_url: https://github.com/davidk003/ECE191-SP26-1fifth
+repo_name: davidk003/ECE191-SP26-1fifth
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - content.code.copy
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  - Jetson: jetson.md
+  - Camera: camera.md
+  - LiDAR: lidar.md
+  - GNSS: gnss.md
+  - YOLO: yolo.md
+  - VESC: vesc.md
+  - Remote Controller: remote-controller.md
+  - Sensor Fusion: sensor-fusion.md
+  - Donkeycar: donkeycar.md
+  - Path Following: path-following.md

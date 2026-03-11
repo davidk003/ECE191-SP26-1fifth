@@ -26,6 +26,7 @@ Required settings:
 If Arduino is flashed and joystick device appears, use Donkeycar joystick mode from `donkeycar.md`:
 
 ```bash
+source ~/donkey/bin/activate
 cd ~/projects/mycars/path_follower
 python manage.py drive --js
 ```

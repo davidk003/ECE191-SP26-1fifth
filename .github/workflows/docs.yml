@@ -24,11 +24,13 @@ jobs:
         with:
           python-version: "3.12"
 
+      - uses: actions/configure-pages@v5
+
       - run: pip install "mkdocs-material" "mkdocs>=1.6,<2"
 
       - run: mkdocs build --strict
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: site
 

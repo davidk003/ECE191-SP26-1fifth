@@ -85,3 +85,9 @@ ros2 run yolo_ros2 yolo_node
 - If topics exist but no messages, validate camera pipeline first.
 - If the benchmark's GPU path is unexpectedly slow, re-run `python3 tests/torch_test.py` and confirm CUDA is actually available.
 - If benchmarking fails entirely, verify the `.pt` model path first and make sure it is an Ultralytics-compatible weights file.
+
+## Example ROS node output
+- the proper output must be selected as a topic in rviz.
+
+<img width="501" height="576" alt="image" src="https://github.com/user-attachments/assets/f41656e3-76ad-4b01-acb6-37404c939a4a" />
+

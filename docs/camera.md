@@ -2,7 +2,18 @@
 
 ## Setup
 
-Install DepthAI v2-compatible package (many scripts rely on v2):
+### Hardware
+
+This setup uses the [OAK-D Pro W](https://docs.luxonis.com/hardware/products/OAK-D%20Pro%20W).
+
+- Connect the camera directly to the Jetson over USB using the port underneath the camera.
+- If possible, use a power/data USB-C splitter. Without one, the camera can have image quality or stability issues.
+- On the Jetson, run `lsusb` and confirm you can see something similar to `Movidius Intel Myriad X`.
+- If the device does not appear in `lsusb`, the problem is likely hardware-related first: cable, power, port, or connection seating.
+
+### Software
+
+Install the DepthAI v2-compatible package (many scripts rely on v2):
 
 ```bash
 pip install "depthai<3"

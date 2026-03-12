@@ -19,3 +19,6 @@ Relevant files:
 Follow the Donkeycar path-following guide for PID tuning and path record/follow operations:
 
 <https://docs.donkeycar.com/guide/path_follow/path_follow/>
+
+## PID/pathfollowing variables
+<img width="1861" height="420" alt="image" src="https://github.com/user-attachments/assets/226fc68c-aca1-4d4c-9ec3-52334a10828a" />

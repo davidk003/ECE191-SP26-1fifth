@@ -34,9 +34,15 @@ sno,Stream1,USB2,RMC,sec1
 setNMEAOutput, Stream1, USB2, GGA, sec1
 ```
 
-You should see output stream immediately.
+You should see output stream immediately. (you may see undecodable garbled output before this)
 
 Exit `picocom` with `Ctrl-A` then `Ctrl-X`.
+
+## Example of NMEA
+- Note that the output will be empty(,,,) indoors until you go further outside.
+
+<img width="710" height="735" alt="image" src="https://github.com/user-attachments/assets/040ce3df-73df-4f47-ba48-5d2ba4a9925a" />
+
 
 ## Notes for Path Following
 

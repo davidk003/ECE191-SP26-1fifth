@@ -9,7 +9,7 @@ This section corresponds to the original "Sensor Fusion Car2" workflow notes.
 
 1. Launch camera node.
 2. Launch lidar node.
-3. In `ros2_camera_lidar_fusion/docker`, build once:
+3. In `~/sensorfusion/ros2_camera_lidar_fusion/docker`, build once:
 
 ```bash
 sh build.sh
@@ -25,8 +25,9 @@ sh run.sh
 
 ```bash
 ros2 topic list
+bash start.sh
+bash launch.sh <node number (1-5) to run corresponding node>
 ```
-
 ## Calibration Note
 
 During `extrinsic_camera_calibration`, hold a black-and-white checkerboard pattern (at least `7x7` squares visible, based on original notes).

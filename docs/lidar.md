@@ -2,6 +2,8 @@
 
 ## Setup
 
+Connect to main power distribution board, 12V.
+
 Driver reference:
 <https://github.com/Livox-SDK/livox_ros_driver2>
 

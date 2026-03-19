@@ -43,6 +43,10 @@ lsusb
   - USB hubs: some variation of `USB hub`
 
 ## Power and Cabling Notes
+- The Jetson should be connected to the main power regulator/distribution board via a barrel Jack to 12V.
+<img width="2419" height="2155" alt="image" src="https://github.com/user-attachments/assets/e8777fc5-e124-4d4f-b772-942b0e8af1dc" />
+<img width="1643" height="2230" alt="image" src="https://github.com/user-attachments/assets/711b6c6b-597d-409e-bd89-760fb02a4635" />
+
 
 - Use a power splitter for the camera when possible (separate power input and data output).
 - Prefer a USB power hub (not only a data hub) to supply sensors/peripherals.

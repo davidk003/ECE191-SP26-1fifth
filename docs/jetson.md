@@ -2,6 +2,10 @@
 
 Use this page before launching any subsystem. These checks catch most bring-up failures quickly.
 
+## Power distribution board
+<img width="4000" height="2250" alt="annotely_image (1) (1)" src="https://github.com/user-attachments/assets/9b196af2-4816-4ff4-942f-bc27c5e31c63" />
+
+
 ## Linux
 
 ### Power on and login

@@ -14,8 +14,8 @@ The enclosure is 3D printed using ASA filament, chosen for its UV resistance, th
 
 - `Back.stl` – rear enclosure panel  
 - `Side Wall.stl` – side structural walls  
-- `Font and Middle.stl` – front and central structural section  
-- `Fron Lid.stl` – front lid/cover  
+- `Front and Middle.stl` – front and central structural section  
+- `Front Lid.stl` – front lid/cover  
 - `Top Lid Part 1.stl` – top enclosure (part 1)  
 - `Top Lid Part 2.stl` – top enclosure (part 2)  
 
@@ -24,4 +24,20 @@ The enclosure is 3D printed using ASA filament, chosen for its UV resistance, th
 - Material: ASA (recommended)  
 - Layer height: 0.2 mm  
 - Supports: Required for overhangs  
-- Orientation: Print major flat surfaces on the build plate  
+- Orientation: Print major flat surfaces on the build plate
+
+## Assembly Process
+
+The enclosure is assembled from back to front. First, the rear section is mounted onto the vehicle chassis using a C-channel structure, providing stable alignment and secure attachment to the base plate. The remaining components are then installed sequentially toward the front. The front lid is attached next to close the front opening, ensuring proper alignment of the enclosure. Finally, the top lid, which is pre-assembled as a single piece, is slid into place along the guiding rails to complete the enclosure. This assembly process ensures a straightforward installation while maintaining structural stability.
+<img width="1536" height="1152" alt="image" src="https://github.com/user-attachments/assets/39427b81-6b9b-4cdf-ad4e-8a91d0d9ecb4" />
+
+
+## Future Work
+
+- Top Lid Assembly
+  - Combine the two top lid parts using threaded inserts for secure fastening.
+  - <img width="1152" height="1536" alt="image" src="https://github.com/user-attachments/assets/07da91bb-b15b-43dd-9498-d9d328ba7c75" />
+
+
+- Weather Robustness Testing
+  - Conduct testing under outdoor conditions to evaluate water and dust resistance, and validate the effectiveness of sealing features such as overlapping interfaces and drainage channels.
